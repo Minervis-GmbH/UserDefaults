@@ -52,7 +52,7 @@ class Config extends ActiveRecord
     /**
      * @var string
      */
-    protected static $table_name;
+    protected static $table_name = "usr_def_config";
     /**
      * @var string
      *

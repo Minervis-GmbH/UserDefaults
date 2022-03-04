@@ -31,4 +31,14 @@ class UserDefaultsConfig extends Config {
 
         throw new \ilException("UserDefaults configuration field '$field' not found");
     }
+	/**
+	 * @inheritDoc
+	 * 
+     * @return string
+     */
+    public static function getTableName() : string
+    {
+		self::$table_name = self::TABLE_NAME;
+        return self::TABLE_NAME;
+    }
 }
